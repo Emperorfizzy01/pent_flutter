@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pent_flutter_project/widgets/reusable_container.dart';
 import 'package:pent_flutter_project/widgets/text_container.dart';
 import 'package:pent_flutter_project/screens/home_page.dart';
+import 'package:pent_flutter_project/bottom_navigation_bar.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -47,7 +48,8 @@ class MainPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomePage()));
+                                builder: (context) =>
+                                    const BottomNavigation()));
                       },
                     ),
                     const SizedBox(
@@ -72,7 +74,8 @@ class MainPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomePage()));
+                                builder: (context) =>
+                                    const BottomNavigation()));
                       },
                     ),
                     const SizedBox(

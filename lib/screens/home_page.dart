@@ -5,8 +5,7 @@ import 'package:pent_flutter_project/widgets/text_container.dart';
 import 'package:pent_flutter_project/widgets/card_layout.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
+  HomePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,26 +87,6 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color(0xFFEDF7F9),
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: ImageIcon(
-              AssetImage('images/Path.png'),
-              color: Color(0xFF189AB4),
-            ),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: ImageIcon(AssetImage('images/Path1.png')),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: ImageIcon(AssetImage('images/Path4.png')),
-            label: '',
-          ),
-        ],
       ),
     );
   }
