@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pent_flutter_project/widgets/reusable_card.dart';
 import 'package:pent_flutter_project/widgets/text_container.dart';
 import 'package:pent_flutter_project/widgets/card_layout.dart';
+import 'package:pent_flutter_project/screens/profile_page.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -26,9 +26,19 @@ class HomePage extends StatelessWidget {
                     size: 20,
                   ),
                 ),
-                const CircleAvatar(
-                  radius: 15,
-                  backgroundImage: AssetImage('images/faruk.jpeg'),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ProfilePage(),
+                      ),
+                    );
+                  },
+                  child: const CircleAvatar(
+                    radius: 15,
+                    backgroundImage: AssetImage('images/faruk.jpeg'),
+                  ),
                 )
               ],
             ),

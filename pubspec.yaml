@@ -64,6 +64,13 @@ flutter:
     - images/image32.png
     - images/image33.png
     - images/Vector1.png
+    - images/Back.png
+    - images/Vector7.png
+    - images/Vector2.png
+    - images/Vector3.png
+    - images/Vector4.png
+    - images/Vector5.png
+    - images/Vector6.png
   # fonts:
   #   - family: Schyler
   #     fonts:
