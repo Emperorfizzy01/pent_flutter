@@ -11,43 +11,46 @@ class profile_content extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Image(
-          image: AssetImage('images/Vector$value1.png'),
-        ),
-        Container(
-          padding: const EdgeInsets.only(left: 10.0, top: 15.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                text1,
-                style: const TextStyle(
-                    color: Color(0xFF189AB4),
-                    fontSize: 17,
-                    fontStyle: FontStyle.italic),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              margin: const EdgeInsets.only(right: 30.0),
+              child: Image(
+                image: AssetImage('images/Vector$value1.png'),
               ),
-              const SizedBox(
-                height: 5.0,
+            ),
+            Container(
+              margin: const EdgeInsets.only(right: 40, top: 15.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    text1,
+                    style: const TextStyle(
+                        color: Color(0xFF189AB4),
+                        fontSize: 17,
+                        fontStyle: FontStyle.italic),
+                  ),
+                  const SizedBox(
+                    height: 5.0,
+                  ),
+                  Text(
+                    text2,
+                    style: const TextStyle(
+                        color: Color(0xFF189AB4),
+                        fontSize: 10,
+                        fontStyle: FontStyle.italic),
+                  )
+                ],
               ),
-              Text(
-                text2,
-                style: const TextStyle(
-                    color: Color(0xFF189AB4),
-                    fontSize: 10,
-                    fontStyle: FontStyle.italic),
-              )
-            ],
-          ),
+            ),
+          ],
         ),
-        SizedBox(
-          width: 20,
-        ),
-        const Padding(
-          padding: EdgeInsets.only(left: 70.0),
-          child: Image(
-            image: AssetImage('images/Vector3.png'),
-          ),
+        const Image(
+          image: AssetImage('images/Vector3.png'),
         ),
       ],
     );
